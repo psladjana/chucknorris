@@ -24,7 +24,6 @@
         if (httpRequest.status === 200) {
           var joke = httpRequest.responseText
           var obj = JSON.parse(joke)
-          console.log(obj)
           /* Write Joke */
           document.getElementById("joke").innerHTML = "<img src='" + obj.icon_url + "' /><div class='quote'>" + obj.value + "</div>";
 
